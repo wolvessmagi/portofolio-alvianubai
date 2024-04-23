@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>LOGIN</title>
+</head>
+
+<body>
+  <h1>login</h1>
+  <input id="username" placeholder="Input username" type="text" />
+  <input id="password" placeholder="Input password" type="password" />
+  <button onclick="login()">Login</button>
+  <p id="gagal"></p>
+
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+     
+	 if (username == "alvian" && password == "ubai") {
+	 //Redirect ke halaman home.html jika login berhasil 
+       window.location.href = "home.html";
+      } else {
+         alert("SALAH PASSWORD WOII!!");
+      }
+    }
+  </script>
+</body>
+
+</html>
